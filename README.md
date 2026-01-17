@@ -1,15 +1,14 @@
-# 👋 Hi, I'm Ejimma Miracle Ngozi
+# 👋 Hi, I'm Miracle Ejimma
 
-### Cybersecurity Analyst | Threat Hunter | Security Operations Specialist
-
+### Cybersecurity Analyst | SIEM Operations | Vulnerability Management & Incident Response
 
 ---
 
 ## 🎯 About Me
 
-I'm a results-driven **Cybersecurity Analyst** with a unique background that combines rigorous scientific methodology from **Medical Laboratory Science** with hands-on **cybersecurity expertise**. This intersection gives me a distinctive edge in threat detection, data integrity enforcement, and systematic problem-solving.
+I'm a Cybersecurity Analyst with hands-on experience in **threat detection, incident response, and vulnerability management** across cloud and on-premises environments. I deploy and tune SIEM/SOAR platforms, conduct behavioral malware analysis, investigate security incidents, perform compliance audits, and implement security controls that enforce defense-in-depth principles.
 
-###  What Makes Me Different?
+**My Unique Edge:**  
 
 My background in Medical Laboratory Science isn't just a career pivot, it's a **strategic advantage** that shapes how I approach cybersecurity:
 
@@ -27,16 +26,15 @@ My background in Medical Laboratory Science isn't just a career pivot, it's a **
 
 **Cybersecurity Analyst at Obiveri Limited** *(January 2025 - Present)*
 
-I monitor network infrastructure and cloud environments using SIEM tools, conduct incident response investigations, perform security audits against NIST/ISO 27001 standards, and deploy IAM solutions with least-privilege access controls. My daily work includes infrastructure change reviews, HyperCare monitoring, and incident reviews to maintain security posture and operational continuity.
+I protect enterprise infrastructure through threat detection, incident response, and vulnerability management. My daily work involves deploying and tuning SIEM platforms to catch threats while minimizing false positives, investigating security incidents, and conducting vulnerability assessments to identify weaknesses. I implement identity and access controls, audit compliance against NIST/ISO 27001 frameworks, integrate security scanning into CI/CD pipelines, and perform OSINT reconnaissance to assess external risks. I also contribute to security documentation including compliance reports and incident procedures, and deliver security awareness training to strengthen organizational security culture.
 
-### 🎓 Certifications & Education
+
+###  Certifications & Education
 
 - **CompTIA Security+** (January 2026)
 - **B.Sc. Medical Laboratory Sciences** - University of Nigeria, Nsukka (CGPA: 3.7)
-- **Medical Laboratory Science Council of Nigeria (MLSCN)** - Annual License to Practice
 
 ---
-
 ## 🛡️ Technical Expertise
 
 ### Security Operations
@@ -44,7 +42,7 @@ I monitor network infrastructure and cloud environments using SIEM tools, conduc
 Threat Detection & Analysis • Incident Response • Vulnerability Management
 Security Monitoring • Log Analysis & Correlation • SIEM Operations
 SOAR Automation • Threat Hunting • IOC Extraction & Validation
-Malware Analysis (Behavioral) • Digital Forensics • Security Auditing
+Behavioral Malware Analysis • Security Auditing
 ```
 
 ### Cloud & Infrastructure Security
@@ -58,9 +56,8 @@ Security Group Management • Defense-in-Depth Implementation
 ```
 Wazuh (SIEM/XDR) • Snort IDS • Fail2Ban • Wireshark
 Sysinternals Suite (Process Monitor, Process Explorer, Autoruns)
-OWASP ZAP • Snyk • Trivy • VirusTotal • AlienVault OTX
-AbuseIPDB • SET (Social Engineer Toolkit) • rkhunter
-auditd • UFW Firewall • iptables
+OWASP ZAP • Snyk • Trivy • VirusTotal • OpenVAS • Nmap • Burp Suite 
+rkhunter • auditd • UFW Firewall • iptables
 ```
 
 ### DevSecOps & Automation
@@ -85,79 +82,86 @@ Python • Bash • PowerShell • XML • JSON
 
 ---
 
-##  Featured Projects
+##  🛡️ Security Projects
 
-### 1.  [Cloud-Native Security Architecture]
+### 1. [Cloud-Native Security Implementation](https://github.com/actualmira/cloud-security-implementation)
 **AWS | Wazuh SIEM | SOAR | CSPM | Network Segmentation**
 
-A comprehensive, multi-layered cloud security defense architecture demonstrating enterprise-grade security implementation in AWS.
+A multi-layered cloud security architecture demonstrating defense-in-depth principles with automated threat detection and response in AWS.
 
 **What I Built:**
-- **Network Segmentation**: VPC with public/private subnets across multiple availability zones for fault tolerance
-- **IAM Security**: Least-privilege policies preventing lateral movement and unauthorized access
-- **Centralized Monitoring**: Wazuh SIEM aggregating AWS CloudTrail (API audit logs) and VPC Flow Logs (network traffic metadata)
-- **Custom Detection Rules**: 5+ rules mapped to MITRE ATT&CK framework detecting security group modifications, root account usage, and brute force attempts
-- **SOAR Automation**: Automated threat response achieving <60-second detection-to-blocking pipeline via iptables
-- **CSPM Implementation**: AWS Config + Lambda + EventBridge for continuous S3 compliance monitoring with automatic remediation
+- **Network Segmentation**: VPC with public/private subnets across multiple availability zones for workload isolation and redundancy
+- **Microsegmentation**: Security group restrictions limiting inter-instance communication to essential ports only, preventing lateral movement within the same subnet
+- **IAM Security**: Least-privilege policies with role-based access controls preventing unauthorized access escalation
+- **Centralized Monitoring**: Wazuh SIEM aggregating AWS CloudTrail (API audit logs) and VPC Flow Logs (network traffic metadata) for unified visibility
+- **Custom Detection Rules**: 5+ MITRE ATT&CK-mapped rules detecting security group modifications, root account usage, and brute force attempts
+- **SOAR Automation**: Wazuh Active Response achieving <60-second automated threat blocking via iptables integration
+- **CSPM Implementation**: AWS Config + Lambda + EventBridge for continuous S3 compliance monitoring with automatic remediation preventing potential data exposure
 
 **Key Metrics:**
-- ⚡ <60 seconds from threat detection to automated response
+- ⚡ <60 seconds from threat detection to automated blocking (SOAR)
+- ⚙️ <29 seconds from misconfiguration to automatic remediation (CSPM)
 - 🎯 5+ custom MITRE ATT&CK-mapped detection rules
 - 🔒 Zero SSH port exposure (bastion-less access via AWS Systems Manager)
+- 🛡️ Microsegmentation enforcing least-privilege network access between instances
 
-**Skills Demonstrated**: Cloud Security Architecture, SIEM/SOAR, Network Segmentation, Compliance Automation, Incident Response Automation
 
 ---
 
-### 2 [Linux Endpoint Security: Defense-in-Depth]
-**Ubuntu Server | Snort IDS | Fail2Ban | SSH Hardening | File Integrity Monitoring**
+### 2 [Linux Endpoint Security: Defense-in-Depth Implementation](https://github.com/actualmira/Linux-Endpoint-Security)
+**Ubuntu Server | Snort IDS | Fail2Ban | SSH Hardening | File Integrity Monitoring **
 
 A progressive security hardening project demonstrating layered defense implementation on Ubuntu Server, starting from baseline configuration through enterprise-grade security controls.
 
 **What I Built:**
 - **Intrusion Detection**: Snort IDS with custom detection rules for nmap scans, SSH brute force, ICMP floods, and UDP scans
-- **Automated Prevention**: Fail2Ban integration with UFW firewall for real-time IP blocking
-- **SSH Hardening**: Key-only authentication, non-standard ports, session timeouts, user restrictions
+- **Automated Prevention**: Fail2Ban integration with UFW firewall for real-time IP blocking based on IDS alerts
+- **SSH Hardening**: Key-only authentication, non-standard ports, root login disabled, max authentication attempts reduced from 6 to 3, session timeouts, and user restrictions
 - **Firewall Configuration**: UFW with default-deny policy, rate limiting, protocol blocking, and comprehensive logging
-- **File Integrity Monitoring**: auditd monitoring critical system files for unauthorized changes
-- **Rootkit Detection**: rkhunter for system binary verification
-- **Security Baseline**: Documented initial security posture for measuring improvements
+- **File Integrity Monitoring**: auditd monitoring critical system files and file permission enforcement
+- **System Hardening**: Password policy enforcement, disabled unused services to reduce attack surface, and strict file permissions
+- **Rootkit Detection**: rkhunter for system binary verification and malware detection
+- **Security Baseline**: Documented initial security posture for measuring improvement metrics
 
 **Key Metrics:**
 - ⚡ <60 seconds automated response time to detected attacks
 - 🎯 100% detection rate against simulated attack patterns
 - 🔐 Multi-layered defense preventing single point of failure
+- 🔒 Attack surface reduced through service minimization and hardened configurations
 
-**Skills Demonstrated**: Linux System Hardening, IDS/IPS, Network Security, Access Control, Security Monitoring
 
 ---
 
-### 3. [End-to-End Security Operations: Malware Analysis to Incident Response]
-**Behavioral Analysis | Threat Intelligence | IOC Extraction | Digital Forensics**
+### 3. [Security Incident Lifecycle: Malware Analysis, IR & Phishing Simulation](https://github.com/actualmira/Malware-Analysis-and-Phishing-Simulation)
+**Behavioral Analysis | Threat Intelligence | IOC Extraction | Digital Forensics | Phishing Simulation**
 
-A comprehensive security operations workflow demonstrating the complete journey from malware analysis through incident response, threat intelligence correlation, and social engineering assessment.
+A comprehensive security operations workflow demonstrating malware analysis, IOC extraction and correlation, incident response procedures, and an independent phishing simulation with credential harvesting assessment.
 
 **What I Built:**
-- **Isolated Lab Environment**: VirtualBox-based malware analysis lab with network segmentation preventing escape
+
+**Malware Analysis & Incident Response:**
+- **Isolated Lab Environment**: VirtualBox-based malware analysis lab with network segmentation preventing malware escape
 - **Behavioral Analysis**: Custom malware script execution with Sysinternals Suite (Process Monitor, Process Explorer, Autoruns) capturing system-level artifacts
-- **Network Analysis**: Wireshark packet capture identifying C2 beacon patterns and network signatures
-- **IOC Extraction**: File hashes (SHA-256), registry modifications, process behaviors, network indicators (IPs, domains)
-- **Threat Intelligence Validation**: IOC correlation against VirusTotal, AlienVault OTX, and AbuseIPDB
-- **Phishing Simulation**: SET (Social Engineer Toolkit) campaign assessing detection capabilities
-- **Incident Response Playbook**: Complete documentation from identification through recovery procedures
+- **Network Analysis**: Wireshark packet capture identifying C2 beacon patterns and domain communications
+- **IOC Extraction**: File hashes (SHA-256), file creation/writing events, registry changes, process behaviors, and C2 domain indicators
+- **Threat Intelligence Correlation**: IOC validation against VirusTotal
+- **Incident Response Execution (NIST)**: Demonstrated containment, eradication/eradication verification, and recovery procedures.
+
+**Phishing Simulation (Independent Assessment):**
+- **Custom Phishing Infrastructure**: HTML/JavaScript credential harvesting page mimicking Microsoft login portal
+- **Traffic Analysis**: Wireshark and NetworkMiner analysis of credential submission and network behavior
+- **Attack Chain Documentation**: Complete phishing workflow from delivery through credential exfiltration
 
 **Key Artifacts:**
-- 📊 Complete IOC dataset (file hashes, registry keys, C2 infrastructure)
-- 📝 Incident response playbook with step-by-step procedures
+- 📊 Complete IOC dataset (file hashes, registry keys, file creation events, C2 domains)
 - 🔍 Behavioral analysis reports with timeline correlation
-
-**Skills Demonstrated**: Malware Analysis, Digital Forensics, Threat Intelligence, OSINT, Incident Response, Social Engineering Assessment
+- 🎣 Phishing simulation demonstrating credential harvesting techniques
 
 
 ---
 
-### 4.  [DevSecOps Security Pipeline]
-**GitHub Actions | SAST | SCA | Container Security | DAST**
+### 4.  [DevSecOps Security Pipeline](https://github.com/actualmira/DevSecOps_Pipeline)
+**GitHub Actions | SAST | SCA | Container Security (Trivy) | DAST**
 
 An automated security testing pipeline demonstrating shift-left security principles by integrating comprehensive security scanning into the CI/CD workflow.
 
@@ -170,45 +174,31 @@ An automated security testing pipeline demonstrating shift-left security princip
 - **Workflow Optimization**: Strategic path filtering and artifact management reducing unnecessary executions
 - **Containerization**: Docker deployment with hardened node:20-alpine base image
 
-**Security Layers Tested:**
-1. **Code Level** → SAST catches code vulnerabilities
-2. **Dependency Level** → SCA identifies vulnerable libraries
-3. **Container Level** → Trivy scans image and OS packages
-4. **Runtime Level** → DAST tests deployed application
 
 **Key Metrics:**
 - 🛡️ 4 security testing layers (SAST, SCA, Container, DAST)
 - ⚡ Automated scanning on every code commit
-- 📦 Hardened Docker containers with minimal attack surface
-
-**Skills Demonstrated**: DevSecOps, CI/CD Security, Container Security, Automated Security Testing, Shift-Left Security
 
 ---
 
 ## 🎯 What I'm Currently Working On
-
-- ☁️ Building multi-cloud security monitoring (AWS, Azure, GCP)
-- 🤖 Developing automated security orchestration playbooks
-- 📚 Pursuing advanced certifications (CISSP, CEH)
+- Building expertise in threat detection, vulnerability management, and incident response workflows
+- Expanding cloud security expertise across AWS, Azure, and GCP environments
+- Exploring machine learning applications in threat detection and anomaly identification
+- Pursuing advanced certifications: GSEC (employer-sponsored) and CISSP
 ---
-
 
 ## 🤝 Let's Connect
 
-I'm always interested in:
-- 🔐 Collaborating on security research projects
-- 💼 Discussing cybersecurity career opportunities
-- 🎓 Sharing knowledge with the security community
-- 🤖 Exploring automation and security engineering
+I'm actively seeking opportunities in **threat detection, vulnerability management, incident response, and security automation**.
 
-**📧 Email**: Ralzchrist@gmail.com  
-**📍 Location**: Abuja, Nigeria
+**Open to:**
+- Cybersecurity Analyst and Security Operations roles
+- Security research collaborations
+- Knowledge sharing with the cybersecurity community
 
----
-
-
-**⭐ If you find my projects useful, consider giving them a star!**
+**📧 Email**: ralzchrist@gmail.com  
+**💼 LinkedIn**: [My LinkedIn Profile URL](https://linkedin.com/in/miracle-ejimma-46b21628a)   
+**📍 Location**: Enugu, Nigeria
 
 ---
-
-*Last Updated: January 2025*
