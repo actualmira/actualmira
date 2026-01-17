@@ -93,12 +93,13 @@ A multi-layered cloud security architecture demonstrating defense-in-depth princ
 - **Network Segmentation**: VPC with public/private subnets across multiple availability zones for workload isolation and redundancy
 - **Microsegmentation**: Security group restrictions limiting inter-instance communication to essential ports only, preventing lateral movement within the same subnet
 - **IAM Security**: Least-privilege policies with role-based access controls preventing unauthorized access escalation
-- **Centralized Monitoring**: Wazuh SIEM aggregating AWS CloudTrail (API audit logs) and VPC Flow Logs (network traffic metadata) for unified visibility
+- **Centralized Monitoring**:Wazuh SIEM aggregating AWS CloudTrail (API audit logs), VPC Flow Logs (network traffic metadata), file integrity monitoring (FIM), and host-based security events for unified visibility
 - **Custom Detection Rules**: 5+ MITRE ATT&CK-mapped rules detecting security group modifications, root account usage, and brute force attempts
 - **SOAR Automation**: Wazuh Active Response achieving <60-second automated threat blocking via iptables integration
 - **CSPM Implementation**: AWS Config + Lambda + EventBridge for continuous S3 compliance monitoring with automatic remediation preventing potential data exposure
 
 **Key Metrics:**
+- 📁 Real-time file integrity monitoring with instant modification detection
 - ⚡ <60 seconds from threat detection to automated blocking (SOAR)
 - ⚙️ <29 seconds from misconfiguration to automatic remediation (CSPM)
 - 🎯 5+ custom MITRE ATT&CK-mapped detection rules
