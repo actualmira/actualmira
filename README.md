@@ -1,12 +1,12 @@
 # 👋 Hi, I'm Miracle Ejimma
 
-### Cybersecurity Analyst | SIEM Operations | Vulnerability Management & Incident Response
+### Security Analyst | Detection Engineering | Cloud & Endpoint Security | DevSecOps 
 
 ---
 
 ## 🎯 About Me
 
-I'm a Cybersecurity Analyst with hands-on experience in **threat detection, incident response, and vulnerability management** across cloud and on-premises environments. I deploy and tune SIEM/SOAR platforms, conduct behavioral malware analysis, investigate security incidents, perform compliance audits, and implement security controls that enforce defense-in-depth principles.
+I'm a Security Analyst with hands-on experience in **threat detection, incident response, and vulnerability management** across cloud and on-premises environments. I deploy and tune SIEM/SOAR platforms, conduct behavioral malware analysis, investigate security incidents, perform compliance audits, and implement security controls that enforce defense-in-depth principles.
 
 **My Unique Edge:**  
 
@@ -26,7 +26,7 @@ My background in Medical Laboratory Science isn't just a career pivot, it's a **
 
 **Cybersecurity Analyst at Obiveri Limited** *(January 2025 - Present)*
 
-I protect enterprise infrastructure through threat detection, incident response, and vulnerability management. My daily work involves deploying and tuning SIEM platforms to catch threats while minimizing false positives, investigating security incidents, and conducting vulnerability assessments to identify weaknesses. I implement identity and access controls, audit compliance against NIST/ISO 27001 frameworks, integrate security scanning into CI/CD pipelines, and perform OSINT reconnaissance to assess external risks. I also contribute to security documentation including compliance reports and incident procedures, and deliver security awareness training to strengthen organizational security culture.
+I protect company infrastructure through threat detection, incident response, and vulnerability management. My daily work involves deploying and tuning SIEM/SOAR solutions to catch threats while minimizing false positives, investigating security incidents, and conducting vulnerability assessments to identify weaknesses. I implement CSPM, identity and access controls, and I integrate security scanning into CI/CD pipelines. I also contribute to security documentation including compliance reports and incident procedures, and deliver security awareness training to strengthen organizational security culture.
 
 
 ###  Certifications & Education
@@ -35,6 +35,31 @@ I protect enterprise infrastructure through threat detection, incident response,
 - **B.Sc. Medical Laboratory Sciences** - University of Nigeria, Nsukka (CGPA: 3.7)
 
 ---
+
+## Current Work & Open Source Engagement
+Active Contribution Proposal
+Ubuntu Security Documentation - Integrating Snort and Fail2ban on Ubuntu 24.04 LTS 
+I recently identified a significant documentation gap in Ubuntu's official security guides: the Snort and Fail2ban documentation hasn't been updated since 2010-2013 and the available documentation references Ubuntu versions that has reached end-of-life and with deprecated tools.
+
+**Proposal Status: Issue #86 - Ubuntu Security Documentation**
+
+I proposed a comprehensive documentation on building a cost-effective and automated Intrusion Detection/Prevention System (IPS) by integrating Snort IDS with Fail2ban on Ubuntu 24.04 LTS. The guide will cover:
+
+- Snort 2.9.20 installation and configuration on Ubuntu 24.04
+- Custom detection rules for SSH brute force, port scanning, and ICMP attacks
+- Fail2ban 1.0.2 integration with Snort alert logs
+- Automated IP blocking via Fail2ban + UFW integration
+- Testing and validation procedures (simulated attacks)
+- Tuning detection thresholds for false positive reduction
+- Extending detection with additional Cisco Talos rules
+
+Reference Implementation: [Linux Endpoint Security: Defense-in-Depth Implementation](https://github.com/actualmira/Linux-Endpoint-Security)
+
+A hands-on integration on Ubuntu 24.04 where I demonstrated <60 second detection-to-block response time. Complete defense-in-depth architecture with multiple security layers
+
+Why This Matters:
+This addresses the needs of resource-constrained organizations, educational institutions, and home labs that can't afford commercial IPS solutions but need enterprise-grade automated threat response.
+
 ## 🛡️ Technical Expertise
 
 ### Security Operations
@@ -42,7 +67,7 @@ I protect enterprise infrastructure through threat detection, incident response,
 Threat Detection & Analysis • Incident Response • Vulnerability Management
 Security Monitoring • Log Analysis & Correlation • SIEM Operations
 SOAR Automation • Threat Hunting • IOC Extraction & Validation
-Behavioral Malware Analysis • Security Auditing
+Behavioral Malware Analysis • Security Auditing • Endpoint Detection and Response
 ```
 
 ### Cloud & Infrastructure Security
@@ -55,9 +80,10 @@ Security Group Management • Defense-in-Depth Implementation
 ### Security Tools & Platforms
 ```
 Wazuh (SIEM/XDR) • Snort IDS • Fail2Ban • Wireshark
+NetworkMiner • Splunk • Microsoft Sentinel • CrowdStrike 
 Sysinternals Suite (Process Monitor, Process Explorer, Autoruns)
-OWASP ZAP • Snyk • Trivy • VirusTotal • OpenVAS • Nmap • Burp Suite 
-rkhunter • auditd • UFW Firewall • iptables
+OWASP ZAP • Snyk • Trivy • VirusTotal • AbuseIPDB • OpenVAS • Nmap • Burp Suite 
+rkhunter • auditd • UFW Firewall • iptables • NGFWs • WAF
 ```
 
 ### DevSecOps & Automation
@@ -73,13 +99,13 @@ Shift-Left Security • Pipeline Integration
 ```
 MITRE ATT&CK • NIST Cybersecurity Framework • HIPAA
 PCI DSS • CIS Benchmarks • ISO 27001 • OWASP Top 10
+NIST RMF • ISO 31000 • NIST SP 800-61 • CVE/CWE Standards
 ```
 
 ### Scripting & Programming
 ```
 Python • Bash • PowerShell • XML • JSON
 ```
-
 ---
 
 ##  🛡️ Security Projects
@@ -154,9 +180,9 @@ A comprehensive security operations workflow demonstrating malware analysis, IOC
 - **Attack Chain Documentation**: Complete phishing workflow from delivery through credential exfiltration
 
 **Key Artifacts:**
-- 📊 Complete IOC dataset (file hashes, registry keys, file creation events, C2 domains)
-- 🔍 Behavioral analysis reports with timeline correlation
-- 🎣 Phishing simulation demonstrating credential harvesting techniques
+- Complete IOC dataset (file hashes, registry keys, file creation events, C2 domains)
+- Behavioral analysis reports with timeline correlation
+- Phishing simulation demonstrating credential harvesting techniques
 
 
 ---
@@ -183,8 +209,9 @@ An automated security testing pipeline demonstrating shift-left security princip
 ---
 
 ## 🎯 What I'm Currently Working On
-- Building expertise in threat detection, vulnerability management, and incident response workflows
-- Expanding cloud security expertise across AWS, Azure, and GCP environments
+- Building expertise in threat detection engineering and defense-indepth architecture
+- Advancing DevSecOps expertise through Secure Infrastructure as Code (IaC)
+- Expanding cloud security expertise across AWS and Azure environments
 - Exploring machine learning applications in threat detection and anomaly identification
 - Pursuing advanced certifications: GSEC (employer-sponsored) and CISSP
 ---
