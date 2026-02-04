@@ -41,7 +41,7 @@ Active Contribution Proposal
 Ubuntu Security Documentation - Integrating Snort and Fail2ban on Ubuntu 24.04 LTS 
 I recently identified a significant documentation gap in Ubuntu's official security guides: the Snort and Fail2ban documentation hasn't been updated since 2010-2013 and the available documentation references Ubuntu versions that has reached end-of-life and with deprecated tools.
 
-**Proposal Status: Issue #86 - Ubuntu Security Documentation**
+[Proposal Status: Issue #86 - Ubuntu Security Documentation](https://github.com/canonical/ubuntu-security-documentation/issues/86)
 
 I proposed a comprehensive documentation on building a cost-effective and automated Intrusion Detection/Prevention System (IPS) by integrating Snort IDS with Fail2ban on Ubuntu 24.04 LTS. The guide will cover:
 
@@ -64,15 +64,17 @@ This addresses the needs of resource-constrained organizations, educational inst
 
 ### Security Operations
 ```
-Threat Detection & Analysis • Incident Response • Vulnerability Management
-Security Monitoring • Log Analysis & Correlation • SIEM Operations
-SOAR Automation • Threat Hunting • IOC Extraction & Validation
-Behavioral Malware Analysis • Security Auditing • Endpoint Detection and Response
+SOC Operations • Threat Detection & Analysis • Incident Response • Alert Triage • Vulnerability Management
+Security Monitoring • Log Analysis & Correlation • SIEM Operations • Intrusion Detection & Prevention 
+SOAR Automation • Threat Hunting • IOC Extraction • Threat Intelligence Correlation & Validation
+Behavioral Malware Analysis • Security Auditing • Endpoint Detection and Response • Root Cause Analysis
+Security Architecture Design • Security Automation • Real-time Network Monitoring • Threat Pattern Recognition
+Emerging Threats and Risk Analysis • Remediation Support • Security Controls Implementation
 ```
 
 ### Cloud & Infrastructure Security
 ```
-AWS (VPC, IAM, CloudTrail, Lambda, S3, EventBridge, Config, Systems Manager)
+AWS (VPC, IAM, GuardDuty, CloudWatch, CloudTrail, Lambda, S3, EventBridge, Config, Systems Manager)
 Network Segmentation • Microsegmentation • Access Control • CSPM
 Security Group Management • Defense-in-Depth Implementation
 ```
@@ -213,12 +215,12 @@ An automated security testing pipeline demonstrating shift-left security princip
 - Advancing DevSecOps expertise through Secure Infrastructure as Code (IaC)
 - Expanding cloud security expertise across AWS and Azure environments
 - Exploring machine learning applications in threat detection and anomaly identification
-- Pursuing advanced certifications: GSEC (employer-sponsored) and CISSP
+- Pursuing advanced certifications: GSEC and CISSP
 ---
 
 ## 🤝 Let's Connect
 
-I'm actively seeking opportunities in **threat detection, vulnerability management, incident response, and security automation**.
+I'm actively seeking opportunities in **SOC Operations, threat detection, vulnerability management, incident response, and security automation**.
 
 **Open to:**
 - Cybersecurity Analyst and Security Operations roles
