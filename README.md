@@ -31,7 +31,7 @@ I protect company infrastructure through threat detection, incident response, an
 
 ###  Certifications & Education
 
-- **CompTIA Security+** (January 2026)
+- **CompTIA Security+** (Issued: February 2026)
 - **B.Sc. Medical Laboratory Sciences** - University of Nigeria, Nsukka (CGPA: 3.7)
 
 ---
