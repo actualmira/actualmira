@@ -112,8 +112,27 @@ Python • Bash • PowerShell • XML • JSON
 
 ##  🛡️ Security Projects
 
-### 1. [Cloud-Native Security Implementation](https://github.com/actualmira/cloud-security-implementation)
-**AWS | Wazuh SIEM | SOAR | CSPM | Network Segmentation**
+### 1.  [DevSecOps Security Pipeline](https://github.com/actualmira/DevSecOps_Pipeline)
+**GitHub Actions | SAST | SCA | Container Security (Trivy) | DAST**
+
+An automated security testing pipeline demonstrating shift-left security principles by integrating comprehensive security scanning into the CI/CD workflow.
+
+**What I Built:**
+- **GitHub Actions Workflow**: Automated CI/CD pipeline triggering on code commits
+- **SAST Implementation**: Snyk Code scanning for source code vulnerabilities
+- **SCA Implementation**: Snyk Open Source analyzing dependency vulnerabilities
+- **Container Security**: Trivy scanning Docker images and OS packages
+- **DAST Implementation**: OWASP ZAP testing deployed application for runtime vulnerabilities
+- **Workflow Optimization**: Strategic path filtering and artifact management reducing unnecessary executions
+
+**Key Metrics:**
+- 4 security testing layers (SAST, SCA, Container, DAST)
+- Automated scanning on every code commit
+
+---
+
+### 2. [Cloud-Native Security Implementation](https://github.com/actualmira/cloud-security-implementation)
+**AWS | Wazuh SIEM | SOAR | CSPM | Network Segmentation | Microsegmentation**
 
 A multi-layered cloud security architecture demonstrating defense-in-depth principles with automated threat detection and response in AWS.
 
@@ -127,36 +146,12 @@ A multi-layered cloud security architecture demonstrating defense-in-depth princ
 - **CSPM Implementation**: AWS Config + Lambda + EventBridge for continuous S3 compliance monitoring with automatic remediation preventing potential data exposure
 
 **Key Metrics:**
-- 📁 Real-time file integrity monitoring with instant modification detection
-- ⚡ <60 seconds from threat detection to automated blocking (SOAR)
-- ⚙️ <29 seconds from misconfiguration to automatic remediation (CSPM)
-- 🎯 5+ custom MITRE ATT&CK-mapped detection rules
-- 🔒 Zero SSH port exposure (bastion-less access via AWS Systems Manager)
-- 🛡️ Microsegmentation enforcing least-privilege network access between instances
-
-
----
-
-### 2 [Linux Endpoint Security: Defense-in-Depth Implementation](https://github.com/actualmira/Linux-Endpoint-Security)
-**Ubuntu Server | Snort IDS | Fail2Ban | SSH Hardening | File Integrity Monitoring **
-
-A progressive security hardening project demonstrating layered defense implementation on Ubuntu Server, starting from baseline configuration through enterprise-grade security controls.
-
-**What I Built:**
-- **Intrusion Detection**: Snort IDS with custom detection rules for nmap scans, SSH brute force, ICMP floods, and UDP scans
-- **Automated Prevention**: Fail2Ban integration with UFW firewall for real-time IP blocking based on IDS alerts
-- **SSH Hardening**: Key-only authentication, non-standard ports, root login disabled, max authentication attempts reduced from 6 to 3, session timeouts, and user restrictions
-- **Firewall Configuration**: UFW with default-deny policy, rate limiting, protocol blocking, and comprehensive logging
-- **File Integrity Monitoring**: auditd monitoring critical system files and file permission enforcement
-- **System Hardening**: Password policy enforcement, disabled unused services to reduce attack surface, and strict file permissions
-- **Rootkit Detection**: rkhunter for system binary verification and malware detection
-- **Security Baseline**: Documented initial security posture for measuring improvement metrics
-
-**Key Metrics:**
-- ⚡ <60 seconds automated response time to detected attacks
-- 🎯 100% detection rate against simulated attack patterns
-- 🔐 Multi-layered defense preventing single point of failure
-- 🔒 Attack surface reduced through service minimization and hardened configurations
+- Real-time file integrity monitoring with instant modification detection
+- <60 seconds from threat detection to automated blocking (SOAR)
+- <29 seconds from misconfiguration to automatic remediation (CSPM)
+- 5+ custom MITRE ATT&CK-mapped detection rules
+- Zero SSH port exposure (bastion-less access via AWS Systems Manager)
+- Microsegmentation enforcing least-privilege network access between instances
 
 
 ---
@@ -176,54 +171,59 @@ A comprehensive security operations workflow demonstrating malware analysis, IOC
 - **Threat Intelligence Correlation**: IOC validation against VirusTotal
 - **Incident Response Execution (NIST)**: Demonstrated containment, eradication/eradication verification, and recovery procedures.
 
-**Phishing Simulation (Independent Assessment):**
+**Phishing Simulation:**
 - **Custom Phishing Infrastructure**: HTML/JavaScript credential harvesting page mimicking Microsoft login portal
 - **Traffic Analysis**: Wireshark and NetworkMiner analysis of credential submission and network behavior
 - **Attack Chain Documentation**: Complete phishing workflow from delivery through credential exfiltration
 
-**Key Artifacts:**
+**Key Metrics:**
 - Complete IOC dataset (file hashes, registry keys, file creation events, C2 domains)
 - Behavioral analysis reports with timeline correlation
 - Phishing simulation demonstrating credential harvesting techniques
 
-
 ---
 
-### 4.  [DevSecOps Security Pipeline](https://github.com/actualmira/DevSecOps_Pipeline)
-**GitHub Actions | SAST | SCA | Container Security (Trivy) | DAST**
+### 4. [Linux Endpoint Security: Defense-in-Depth Implementation](https://github.com/actualmira/Linux-Endpoint-Security)
+**Ubuntu Server | Snort IDS | Fail2Ban | SSH Hardening | File Integrity Monitoring | Password Policy Enforcement**
 
-An automated security testing pipeline demonstrating shift-left security principles by integrating comprehensive security scanning into the CI/CD workflow.
+A progressive security hardening project demonstrating layered defense implementation on Ubuntu Server, starting from baseline configuration to enterprise-grade security controls.
 
 **What I Built:**
-- **GitHub Actions Workflow**: Automated CI/CD pipeline triggering on code commits
-- **SAST Implementation**: Snyk Code scanning for source code vulnerabilities
-- **SCA Implementation**: Snyk Open Source analyzing dependency vulnerabilities
-- **Container Security**: Trivy scanning Docker images and OS packages
-- **DAST Implementation**: OWASP ZAP testing deployed application for runtime vulnerabilities
-- **Workflow Optimization**: Strategic path filtering and artifact management reducing unnecessary executions
-- **Containerization**: Docker deployment with hardened node:20-alpine base image
-
+- **Intrusion Detection**: Snort IDS with custom detection rules for nmap scans, SSH brute force, ICMP floods, and UDP scans
+- **Automated Prevention**: Fail2Ban integration with UFW firewall for real-time IP blocking based on IDS alerts
+- **SSH Hardening**: Key-only authentication, non-standard ports, root login disabled, max authentication attempts reduced from 6 to 3, session timeouts, and user restrictions
+- **Firewall Configuration**: UFW with default-deny policy, rate limiting, protocol blocking, and comprehensive logging
+- **File Integrity Monitoring**: auditd monitoring critical system files and file permission enforcement
+- **System Hardening**: Password policy enforcement, disabled unused services to reduce attack surface, and strict file permissions
+- **Rootkit Detection**: rkhunter for system binary verification and malware detection
+- **Security Baseline**: Documented initial security posture for measuring improvement metrics
 
 **Key Metrics:**
-- 🛡️ 4 security testing layers (SAST, SCA, Container, DAST)
-- ⚡ Automated scanning on every code commit
+- <60 seconds automated response time to detected attacks
+- 100% detection rate against simulated attack patterns
+- Multi-layered defense preventing single point of failure
+- Attack surface reduced through service minimization and hardened configurations
+
 
 ---
 
 ## 🎯 What I'm Currently Working On
 - Building expertise in threat detection engineering and defense-indepth architecture
 - Advancing DevSecOps expertise through Secure Infrastructure as Code (IaC)
-- Expanding cloud security expertise across AWS and Azure environments
+- Expanding cloud security expertise across AWS, GCP, and Azure environments
 - Exploring machine learning applications in threat detection and anomaly identification
-- Pursuing advanced certifications: GSEC and CISSP
+- Pursuing advanced certifications
+
 ---
 
 ## 🤝 Let's Connect
 
-I'm actively seeking opportunities in **SOC Operations, threat detection, vulnerability management, incident response, and security automation**.
+I'm actively seeking opportunities in:
 
-**Open to:**
-- Cybersecurity Analyst and Security Operations roles
+- Security Engineering
+- SOC Operations/Threat Detection
+- Incident Response
+- Risk/Vulnerability management
 - Security research collaborations
 - Knowledge sharing with the cybersecurity community
 
