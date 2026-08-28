@@ -74,7 +74,7 @@ I am skilled at implementing and securing infrastructure as code and CI/CD pipel
 
 A defense-in-depth security for cloud-native applications on AWS EKS covering threat modelling, IaC scanning, Kubernetes hardening, container security, supply chain security, observability, and runtime threat detection.
 
-**What I Built**
+**What I'm Building**
 
 - **Defence-in-Depth Architecture**: Full-stack security on AWS EKS from threat modelling and infrastructure hardening to runtime detection and automated cloud response
 - **Zero Trust Networking**: Cilium default-deny network policies with FQDN-based egress filtering across every namespace, preventing lateral movement between workloads
