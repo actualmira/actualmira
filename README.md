@@ -7,7 +7,7 @@
 
 ## About Me
 
-I am a Cloud Security Engineer and DevSecOps with a focus on building and orchestrating automated and scalable systems that detect and neutralize threats in real time. My background in Security Operations gave me a strong foundation in threat detection and incident response, which I now apply at the infrastructure and platform level by designing systems that are secure by default.
+I am a Cloud Security and DevSecOps Engineer with a focus on building and orchestrating automated and scalable systems that detect and neutralize threats in real time. My background in Security Operations gave me a strong foundation in threat detection and incident response, which I now apply at the infrastructure and platform level by designing systems that are secure by default.
 
 I am skilled at implementing and securing infrastructure as code and CI/CD pipelines, enforcing identity and access management for users and services, deploying zero trust architecture with network and micro segmentation, secrets management, cloud security posture management, runtime threat detection with automated response, logging, observability, and security monitoring for visibility and audit. 
 
