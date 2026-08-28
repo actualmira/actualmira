@@ -1,56 +1,88 @@
 
 # 👋 Hi, I'm Miracle Ejimma
 
-### Security Analyst | Cloud Security (AWS) | Endpoint Protection | Detection Engineering | DevSecOps
+### Cloud Security and DevSecOps Engineer (AWS) | Identity and Access Management | Infrastructure and Runtime Environment Security | Detection Engineering 
 
 ---
 
-## 🎯 About Me
+## About Me
 
-I am a cybersecurity professional with a strong foundation in Security Operations, threat detection and incident response. I am specializing in Cloud Security Engineering and DevSecOps, with a focus on building and orchestrating automated and scalable systems that detect and neutralize threats in real time.
+I am a Cloud Security Engineer and DevSecOps with a focus on building and orchestrating automated and scalable systems that detect and neutralize threats in real time. My background in Security Operations gave me a strong foundation in threat detection and incident response, which I now apply at the infrastructure and platform level by designing systems that are secure by default.
 
-I have a unique edge with my background in medical laboratory science, I developed the core skills that drive my success in security operations. I analyzed thousands of patient samples where a single oversight could mean a wrong diagnosis, which trained me to catch anomalies others might miss and influences my precision in threat detection. I troubleshot complex diagnostic equipment failures which taught me methodical investigation techniques I now apply to incident response and vulnerability analysis. Also, my experience with Quality Management Systems (QMS), HIPAA-equivalent regulations, and laboratory accreditation standards gives me deep understanding of compliance frameworks like NIST Cybersecurity Framework and CIS Benchmarks.
+I am skilled at implementing and securing infrastructure as code and CI/CD pipelines, enforcing identity and access management for users and services, deploying zero trust architecture with network and micro segmentation, secrets management, cloud security posture management, runtime threat detection with automated response, logging, observability, and security monitoring for visibility and audit. 
+
 
 ---
 
 ### Professional Experience in Cybersecurity
 
-**Security Analyst (Security Operations & Engineering)** *(Obiveri Limited: January 2025 - Present)*
+**Cloud Security and DevSecOps Engineer** *(Obiveri Limited: January 2026 - Present)*
 
-- I perform daily continuous monitoring and analysis of network and system logs; triage and review 50+ daily security alerts logged to SIEM solution (Wazuh), filter out noise, reducing mean time to detect (MTTD) by 20%
+- Enforced secure, consistent, and auditable infrastructure by managing all cloud resources through Terraform IaC and securing the CI/CD pipeline with automated scanning gates in GitHub Actions, preventing misconfigured infrastructure and vulnerable artifacts from reaching production.
+  
+- Secured microservices east-west traffic by deploying Linkerd service mesh with Vault PKI as the internal certificate authority and cert-manager as the certificate orchestrator, automating certificate issuance and renewal into Linkerd's control plane and providing mutual authentication across all service-to-service communication.
+  
+- Protected ingress traffic by deploying Envoy Gateway as the cluster ingress controller behind an AWS ALB, which enabled fine-grained L7 routing and secure traffic policy at the ingress layer.
 
-- I build and fine-tune custom detection rules mapped to MITRE ATT&CK and have achieved automated threat detection and response in less than 30 seconds using SIEM/SOAR solutions, reducing mean time to respond (MTTR) by 30%.
+- Managed users' authentication and authorization by deploying Keycloak as the central identity provider, configuring realms and clients to enforce consistent authentication policies as well as single sign-on across platform interfaces
 
-- I engineer CSPM solutions using AWS Lambda and Config to automatically remediate cloud misconfigurations in seconds, ensuring continuous compliance with the required security posture.
+- Eliminated credential sprawl and enforced least privilege permissions by implementing IRSA and OIDC federation, ensuring every workload and pipeline role uses short-lived tokens scoped to its exact permissions.
 
-- I Integrate security into CI/CD pipelines (GitHub Actions) through automated SAST, SCA, and container scanning, providing shift-left security.
+- Eliminated static credentials by deploying HashiCorp Vault with ESO as the secrets broker, enabling dynamic short-lived database credentials through the Vault Database Engine.
 
-- I participate in HyperCare security monitoring for IAM infrastructure ensuring that new identity deployments are secure and stable.
+  
+**Security Analyst (Security Operations & Engineering)** *(Obiveri Limited: January 2025 - January 2026)*
+
+- I performed daily continuous monitoring and analysis of network and system logs; triaged and reviewied 50+ daily security alerts logged to SIEM solution (Wazuh), filtered out noise, reducing mean time to detect (MTTD) by 20%
+
+- I built and fine-tuned custom detection rules mapped to MITRE ATT&CK and achieved automated threat detection and response in less than 30 seconds using SIEM/SOAR solutions, reducing mean time to respond (MTTR) by 30%.
+
+- I engineered CSPM solutions using AWS Lambda and Config to automatically remediate cloud misconfigurations in seconds, ensuring continuous compliance with the required security posture.
+
+- I Integrated security into CI/CD pipelines (GitHub Actions) through automated SAST, SCA, and container scanning, providing shift-left security.
+
+- I participated in HyperCare security monitoring for IAM infrastructure ensuring that new identity deployments are secure and stable.
 
 - I performed vulnerability assessments of company infrastructure using OpenVAS, Nmap, and Burp Suite, identified vulnerabilities and made recommendations to control identified risks which reduced attack surface by 15%
 
-###  Certifications & Education
+
+**Network Security Volunteer** *(Confidential IT Services Company: August 2023 - January 2025)*
+
+- Collaborated with Security Analysts to run basic network audits, and prevented potential exploitation of vulnerabilities. 
+
+- Assisted the network engineering team in configuring and provisioning enterprise Cisco switches and routers for network isolation and segmentation.
+
+- Assisted the network security team in implementing ACLs and basic Port Security protocols to mitigate unauthorized access.
+
+
+## Key Career Achievement
+
+- Recipient of the Linux Foundation Training (LiFT) Scholarship 2026
+  
+## Certifications & Education
 
 - **CompTIA Security+** (Issued: February 2026)
+- **Certified Kubernetes Administrator (CKA)** (Scheduled: October, 2026)
 - **B.Sc. Medical Laboratory Sciences** - University of Nigeria, Nsukka (CGPA: 3.7)
 
 ---
 
-##  Security Projects
+## Security Projects
 
 ### 1. [DevSecOps EKS CloudNative Platform](https://github.com/actualmira/DevSecOps-EKS-CloudNative-Platform) (In Progress)
 **Threat Modelling | IaC Scanning | Kubernetes Hardening | Container Security | Supply Chain Security | Observability | Runtime Threat Detection**
 
 A defense-in-depth security for cloud-native applications on AWS EKS covering threat modelling, IaC scanning, Kubernetes hardening, container security, supply chain security, observability, and runtime threat detection.
 
-**What I'm Building**
+**What I Built**
 
-- **Threat-Modelling**: A comprehensive threat modelling for AWS/EKS infrastructure, defines trust boundaries, identifies threats applicable to the system, there impact, severity, and likelihood using STRIDE and DREAD framework, and determines the suitable mitigations.
-- **Kubernetes Security Hardening**
-- **EKS Infrastructure with AWS Security Controls**
-- **Secrets Management and Supply Chain Security**
-- **Runtime Threat Detection and Automated Response**
-- **Full-Stack Observability and Security Validation with Penetration Testing**
+- **Defence-in-Depth Architecture**: Full-stack security on AWS EKS from threat modelling and infrastructure hardening to runtime detection and automated cloud response
+- **Zero Trust Networking**: Cilium default-deny network policies with FQDN-based egress filtering across every namespace, preventing lateral movement between workloads
+- **Secrets Management and TLS**: HashiCorp Vault with ESO enforcing path-scoped least privilege, with cert-manager and trust-manager securing Vault-to-ESO communication over TLS
+- **Runtime Threat Detection**: Falco with custom-tuned rules forwarding structured alerts to Loki through Falcosidekick, correlated with application logs in Grafana for real-time investigation
+- **Cloud Security Posture Management**: GuardDuty finding remediation through EventBridge and Lambda, with AWS Config enforcing continuous compliance and auto-remediating misconfigurations in seconds
+- **Node Patch Management and Admin Access**: SSM Patch Manager with scan-only weekly maintenance windows providing vulnerability visibility, and Session Manager as the only administrative access path with all session activity logged to Object-Locked S3 and CloudWatch
+- **CI/CD Pipeline Security**: GitHub OIDC federation with separate least-privilege plan and apply roles per workflow file and branch, eliminating hardcoded credentials and preventing cross-workflow privilege escalation
 
 ---
 
@@ -127,19 +159,25 @@ A hands-on integration on Ubuntu 24.04 where I demonstrated <60 second detection
 
 ## Technical Expertise
 
-### Security Operations
+### DevSecOps & Automation
 ```
-SIEM Operations (Wazuh, Splunk) • SOAR Automation • Threat Detection & Analysis • Incident Response •  
-Security Architecture Design • Intrusion Detection & Prevention (Snort, Suricata) • Threat Intelligence Correlation
-Detection Engineering• Endpoint Detection and Response • Root Cause Analysis
+- Container Security: Docker • Trivy • Snyk (SAST, SCA)
+
+- Infrastructure & Policy as Code: CI/CD (Github Actions) • OPA Gatekeeper • Hadolint • Checkov • kube-linter • kubeconform • Terragrunt • ArgoCD
+
+- Software Supply Chain Security: Trufflehog • GitLeaks • Co-sign • Syft • Amazon ECR
+
+- Kubernetes Runtime & Observability: K8s PSS • Falco • Falco Sidekick • K8s NetworkPolicies • RBAC • LGTM (Loki, Grafana, Prometheus, Alloy)
+
+- Secrets Management: HashiCorp Vault • ESO • KMS 
 
 ```
 
 ### Cloud Security
 ```
-- Identity & Access Management: AWS IAM • IRSA • OIDC
+- Identity & Access Management: AWS IAM • IRSA • OIDC • Keycloak
 
-- Network & Perimeter Security: VPC • Network Segmentation • Microsegmentation • WAF • AWS Shield
+- Network & Perimeter Security: VPC • Network Segmentation • Microsegmentation • WAF • Cilium CNI • Envoy Gateway • Linkerd • cert-manager • trust-manager 
 
 - CSPM: AWS Config • EventBridge • Lambda • AWS Security Hub
 
@@ -149,25 +187,6 @@ Detection Engineering• Endpoint Detection and Response • Root Cause Analysis
 
 - Compute & Orchestration: EKS • Amazon ECR
 
-```
-### DevSecOps & Automation
-```
-- Container Security: Docker • Trivy • Snyk (SAST, SCA)
-
-- Infrastructure & Policy as Code: CI/CD (Github Actions) • OPA Gatekeeper • Hadolint • Checkov • kube-linter • kubeconform
-
-- Software Supply Chain Security: Trufflehog • GitLeaks • Co-sign • Syft • Amazon ECR
-
-- Kubernetes Runtime & Observability: K8s PSS • Falco • Falco Sidekick • K8s NetworkPolicies • RBAC • LGTM (Loki, Grafana, Prometheus, Promtail)
-
-- Secrets & Identity Management: HashiCorp Vault • ESO • IRSA • OIDC • KMS
-
-```
-
-### Security Frameworks & Compliance
-```
-MITRE ATT&CK • NIST Cybersecurity Framework •  CIS Benchmarks • HIPAA
-CVE/CWE Standards • NIST SP 800-61 • PCI DSS  • ISO 27001 • OWASP Top 10
 
 ```
 
@@ -176,11 +195,25 @@ CVE/CWE Standards • NIST SP 800-61 • PCI DSS  • ISO 27001 • OWASP Top 10
 Rego • Python • Bash • YAML • HCL
 
 ```
+
+### Security Operations
+```
+SIEM Operations (Wazuh, Splunk) • SOAR Automation • Threat Detection & Analysis • Incident Response •  
+Security Architecture Design • Intrusion Detection & Prevention (Snort, Suricata) • Threat Intelligence Correlation
+Detection Engineering• Endpoint Detection and Response • Root Cause Analysis
+
+```
+
+### Security Frameworks & Compliance
+```
+MITRE ATT&CK • NIST Cybersecurity Framework • CIS Benchmarks • HIPAA
+CVE/CWE Standards • NIST SP 800-61 • PCI DSS • ISO 27001 • OWASP Top 10
+
+```
+
 ---
 
 ## 🤝 Let's Connect
-
-I'm actively seeking opportunities in Cloud Security Engineering, DevSecOps, and Threat Detection Engineering
 
 **💼 LinkedIn**: [My LinkedIn Profile URL](https://linkedin.com/in/miracle-ejimma-46b21628a)   
 **📍 Location**: Enugu, Nigeria
