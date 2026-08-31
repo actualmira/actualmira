@@ -22,7 +22,7 @@ I am skilled at implementing and securing infrastructure as code and CI/CD pipel
   
 - Secured microservices east-west traffic by deploying Linkerd service mesh with Vault PKI as the internal certificate authority and cert-manager as the certificate orchestrator, automating certificate issuance and renewal into Linkerd's control plane and providing mutual authentication across all service-to-service communication.
   
-- Protected ingress traffic by deploying Envoy Gateway as the cluster ingress controller behind an AWS ALB, which enabled fine-grained L7 routing and secure traffic policy at the ingress layer.
+- Protected ingress traffic by deploying Envoy Gateway as the cluster ingress controller behind an AWS NLB, which enabled fine-grained L7 routing and secure traffic policy at the ingress layer.
 
 - Managed users' authentication and authorization by deploying Keycloak as the central identity provider, configuring realms and clients to enforce consistent authentication policies as well as single sign-on across platform interfaces
 
