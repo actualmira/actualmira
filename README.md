@@ -19,9 +19,11 @@ I am skilled at implementing and securing infrastructure as code and CI/CD pipel
 **Cloud Security and DevSecOps Engineer** *(Obiveri Limited: January 2026 - Present)*
 
 - Designed secure and consistent infrastructure delivery by managing all cloud resources through
-Terraform IaC, implemented GitOps-based deployment workflows using Helm and Argo CD, and
+Terraform IaC, and 
 embedded automated scanning gates in GitHub Actions with branch protection rules, preventing
 misconfigured infrastructure and vulnerable artifacts from reaching production.
+
+- Implemented GitOps-based deployment workflows using Helm and Argo CD to automate continuous delivery to EKS clusters, preventing configuration drift.
   
 - Secured microservices east-west traffic by deploying Linkerd service mesh with Vault PKI as the internal certificate authority and cert-manager as the certificate orchestrator, automating certificate issuance and renewal into Linkerd's control plane and providing mutual authentication across all service-to-service communication.
   
@@ -53,9 +55,9 @@ misconfigured infrastructure and vulnerable artifacts from reaching production.
 
 - Collaborated with Security Analysts to run basic network audits, and prevented potential exploitation of vulnerabilities. 
 
-- Assisted the network engineering team in configuring and provisioning enterprise Cisco switches and routers for network isolation and segmentation.
+- Configured enterprise Cisco switches and routers for network isolation and segmentation.
 
-- Assisted the network security team in implementing ACLs and basic Port Security protocols to mitigate unauthorized access.
+-  Configured ACLs and basic Port Security protocols to mitigate unauthorized access.
 
 
 ## Key Career Achievement
@@ -65,6 +67,7 @@ misconfigured infrastructure and vulnerable artifacts from reaching production.
 ## Certifications & Education
 
 - **CompTIA Security+** (Issued: February 2026)
+- **Introduction to AI Security | AISEC University** (Issued: September 2026)
 - **Certified Kubernetes Administrator (CKA)** (Scheduled: October, 2026)
 - **B.Sc. Medical Laboratory Sciences** - University of Nigeria, Nsukka (CGPA: 3.7)
 
