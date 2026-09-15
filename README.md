@@ -18,7 +18,10 @@ I am skilled at implementing and securing infrastructure as code and CI/CD pipel
 
 **Cloud Security and DevSecOps Engineer** *(Obiveri Limited: January 2026 - Present)*
 
-- Enforced secure, consistent, and auditable infrastructure by managing all cloud resources through Terraform IaC and securing the CI/CD pipeline with automated scanning gates in GitHub Actions, preventing misconfigured infrastructure and vulnerable artifacts from reaching production.
+- Designed secure and consistent infrastructure delivery by managing all cloud resources through
+Terraform IaC, implemented GitOps-based deployment workflows using Helm and Argo CD, and
+embedded automated scanning gates in GitHub Actions with branch protection rules, preventing
+misconfigured infrastructure and vulnerable artifacts from reaching production.
   
 - Secured microservices east-west traffic by deploying Linkerd service mesh with Vault PKI as the internal certificate authority and cert-manager as the certificate orchestrator, automating certificate issuance and renewal into Linkerd's control plane and providing mutual authentication across all service-to-service communication.
   
